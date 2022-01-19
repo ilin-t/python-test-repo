@@ -10,6 +10,7 @@ class TestDataset(unittest.TestCase):
     def test_get_item(self):
         dataset = StackOverflow16k(root="../stack_oveflow_16k_train")
         print(dataset.item_lookup.iloc[1, 0])
+        self.assertEqual(dataset.item_lookup.iloc[1, 0], 1)
 
 
 if __name__ == '__main__':

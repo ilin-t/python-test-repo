@@ -14,7 +14,7 @@ class StackOverflow16k(Dataset):
 
     def __init__(self, root, transform=None):
 
-        self.item_lookup = pd.read_csv("../annotations.csv")
+        self.item_lookup = pd.read_csv("annotations.csv")
         self.root = root
         self.transform = transform
         self.labels = {0: "csharp", 1: "java", 2: "javascript", 3: "python"}
